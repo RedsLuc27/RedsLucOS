@@ -2,7 +2,7 @@
 An "OS"
 
 # V0.0.2 Changelogs
- - Added an little smiley on the screen
+ - Added a little smiley on the screen
 
 
 # Build and start the os:
