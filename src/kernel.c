@@ -4,6 +4,7 @@ void k_clear_screen();
 unsigned int Welcome(char *message, unsigned int line);
 unsigned int Version(char *message, unsigned int line);
 unsigned int Smiley(char *message, unsigned int line);
+unsigned int Easter_Egg(char *message, unsigned int line);
 
 void k_main() 
 {
@@ -16,6 +17,7 @@ void k_main()
        " /\\    )  ) \n"
        " \\/   /  /  \n"
        "     /__/   ", 0);
+	Easter_Egg("1212", 0);
 };
 
 
@@ -92,6 +94,35 @@ unsigned int Version(char *message, unsigned int line)
 unsigned int Smiley(char *message, unsigned int line)
 {
 	char *vidmem = (char *) 0xb8500;
+	unsigned int i=0;
+
+	i=(line*80*2);
+
+	while(*message!=0)
+	{
+		if(*message=='\n')
+		{
+			line++;
+			i=(line*80*2);
+			*message++;
+		} else {
+			vidmem[i]=*message;
+			*message++;
+			i++;
+			vidmem[i]=WHITE_TXT;
+			i++;
+		};
+
+
+	};
+
+	return(1);
+}
+
+
+unsigned int Easter_Egg(char *message, unsigned int line)
+{
+	char *vidmem = (char *) 0xb9000;
 	unsigned int i=0;
 
 	i=(line*80*2);
