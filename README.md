@@ -1,6 +1,8 @@
 # RedsLucOS
 An "OS"
 
+#V0.0.2 Changelogs
+ - Added an little smiley on the screen
 
 
 # Build and start the os:
