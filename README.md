@@ -1,4 +1,10 @@
 # RedsLucOS
 An "OS"
 
-To start the OS you can just use qemu : "qemu-system-i386 -kernel kernel"
+
+
+# Build and start the os:
+ Build the os by using: "make"
+
+
+ Start the os by using: "qemu-system-i386 -kernel kernel"
