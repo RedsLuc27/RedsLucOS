@@ -1,8 +1,8 @@
 # RedsLucOS
 An "OS"
 
-# V0.0.2 Changelogs
- - Added a little smiley on the screen
+# V0.0.3 Changelogs
+ - I updated the code 
 
 
 # Build and start the os:
@@ -13,7 +13,8 @@ An "OS"
 
 
 # Preview
-An preview of the V0.0.2
+An preview of the V0.0.3
 
-![image](https://github.com/user-attachments/assets/a2df45b6-3815-4ac2-9157-df6e6708f1cd)
+![image](https://github.com/user-attachments/assets/0536ea4b-36e2-4ade-8b8d-c184dde772fe)
+
 
