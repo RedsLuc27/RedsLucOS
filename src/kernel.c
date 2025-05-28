@@ -61,7 +61,10 @@ void k_main()
 	print("Changelog of the V0.0.4:", 10, W);
 	print(" -Text color have been added", 11, B);
 	print(" -The following color are actually present:", 12, W);
-	print(" -White, Pink, Green, Blue", 13, W);
+	print("                      Blue", 13, B);
+	print("               Green,", 13, G);
+	print("         Pink,", 13, P);
+	print(" -White,", 13, W);
 };
 
 
