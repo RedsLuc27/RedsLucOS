@@ -1,8 +1,8 @@
 # RedsLucOS
 An "OS"
 
-# V0.0.3 Changelogs
- - I updated the code 
+# V0.0.4 Changelogs
+ - I have added color text
 
 
 # Build and start the os:
@@ -13,9 +13,10 @@ An "OS"
 
 
 # Preview
-An preview of the V0.0.3
+An preview of the V0.0.4
 
-![image](https://github.com/user-attachments/assets/0881b96e-f2c8-4fb9-bafc-c86706fc2e18)
+![image](https://github.com/user-attachments/assets/7e1e82a3-c2af-4d3d-9b36-a23d3c731276)
+
 
 
 
