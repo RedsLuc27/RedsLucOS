@@ -1,19 +1,27 @@
-#define WHITE_TXT 0x07
+#define W 0x07
+#define P 0xD
+#define G 0xA
+#define B 0x9
+
 
 void k_clear_screen();
-unsigned int Welcome(char *message, unsigned int line);
+/*unsigned int Welcome(char *message, unsigned int line);
 unsigned int Version(char *message, unsigned int line);
 unsigned int Smiley(char *message, unsigned int line);
 unsigned int Easter_Egg(char *message, unsigned int line);
+*/
 
-void print(char *message, unsigned int line)
+
+
+
+void print(char *message, unsigned int line, int color)
 {
 	char *vidmem = (char *) 0xb8000;
 	unsigned int i=0;
 	i=(line*80*2);
 
 	while(*message!=0)
-	{
+	{	
 		if(*message=='\n')
 		{
 			line++;
@@ -23,11 +31,12 @@ void print(char *message, unsigned int line)
 			vidmem[i]=*message;
 			*message++;
 			i++;
-			vidmem[i]=WHITE_TXT;
+			vidmem[i]=color;
 			i++;
 		};
 	};
 }
+
 
 void k_main() 
 {
@@ -41,14 +50,18 @@ void k_main()
        " \\/   /  /  \n"
        "     /__/   ", 0);
 	Easter_Egg("1212", 0);*/
-	print("Welcome to RedsLucOS", 0);
-	print("                                            V0.0.3", 1);
+	print("Welcome to RedsLucOS", 0, W);
+	print("                                            V0.0.4", 1, W);
 	print("     ___   \n"
        " /\\  \\  \\   \n"
        " \\/   \\  \\  \n"
        " /\\    )  ) \n"
        " \\/   /  /  \n"
-       "     /__/   ", 2);
+       "     /__/   ", 2, B);
+	print("Changelog of the V0.0.4:", 10, W);
+	print(" -Text color have been added", 11, B);
+	print(" -The following color are actually present:", 12, W);
+	print(" -White, Pink, Green, Blue", 13, W);
 };
 
 
@@ -61,7 +74,7 @@ void k_clear_screen()
 	{
 		vidmem[i]=' ';
 		i++;
-		vidmem[i]=WHITE_TXT;
+		vidmem[i]=W;
 		i++;
 	};
 };
