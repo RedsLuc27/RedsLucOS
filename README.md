@@ -15,7 +15,8 @@ An "OS"
 # Preview
 A preview of the V0.0.4
 
-![image](https://github.com/user-attachments/assets/7e1e82a3-c2af-4d3d-9b36-a23d3c731276)
+![image](https://github.com/user-attachments/assets/848a2d2a-32bd-4181-8e74-8012918518ad)
+
 
 
 
