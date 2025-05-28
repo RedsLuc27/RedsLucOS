@@ -13,7 +13,7 @@ An "OS"
 
 
 # Preview
-An preview of the V0.0.4
+A preview of the V0.0.4
 
 ![image](https://github.com/user-attachments/assets/7e1e82a3-c2af-4d3d-9b36-a23d3c731276)
 
